@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/victory"
+    >
 
     <TextView
         android:id="@+id/victoryTextView"
@@ -12,11 +13,30 @@
         android:background="@mipmap/bacground"
         android:gravity="center"
         android:text="游戏胜利！"
-        android:textSize="36sp"
         android:textColor="@color/black"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/return_button"
+        android:background="@color/purple_200"
+        android:layout_width="99dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="378dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="101dp"
+        android:text="返回"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/victoryTextView"
+        app:layout_constraintEnd_toEndOf="@+id/victoryTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/victoryTextView"
+        app:layout_constraintTop_toTopOf="@+id/victoryTextView"
+        app:layout_constraintVertical_bias="0.21" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
